@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 21
+    buildToolsVersion "19.1.0"
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 21
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    dexOptions {
+        incremental false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    productFlavors {
+    }
+
+}
+dependencies {
+
+    compile files('libs/LudeiChromium.jar')
+    compile files('libs/guava_javalib.jar')
+    compile files('libs/jsr_305_javalib.jar')
+}
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.12'
+}
+repositories {
+    maven { url 'https://github.com/ludei/webview-plus' }
+}

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">YWCA</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="native_text">This is native</string>
+    <string name="go_game_1">Play Game 1</string>
+    <string name="go_game_2">Play Game 2</string>
+    <string name="go_game_3">Play Game 3</string>
+    <string name="go_game_4">Play Game 4</string>
+</resources>

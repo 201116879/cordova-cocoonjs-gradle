@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="LudeiChromium">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/webviewplus/libs/LudeiChromium.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
